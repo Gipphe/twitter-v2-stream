@@ -1,0 +1,47 @@
+{
+	"name": "twitter-v2-stream",
+	"version": "0.1.0",
+	"license": "MIT",
+	"author": {
+		"name": "Victor Nascimento Bakke",
+		"url": "https://github.com/Gipphe"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist/index.js",
+		"dist/index.d.ts"
+	],
+	"scripts": {
+		"prepublishOnly": "tsc",
+		"lint": "eslint --ext .ts .",
+		"test": "ava"
+	},
+	"ava": {
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+	},
+	"devDependencies": {
+		"@sinonjs/fake-timers": "^6.0.1",
+		"@tsconfig/node12": "^1.0.7",
+		"@types/node-fetch": "^2.5.7",
+		"@types/sinonjs__fake-timers": "^6.0.1",
+		"ava": "^3.12.1",
+		"eslint": "7.2.0",
+		"eslint-config-airbnb-base": "14.2.0",
+		"eslint-plugin-import": "2.21.2",
+		"testdouble": "^3.16.1",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.2"
+	},
+	"dependencies": {
+		"abort-controller": "^3.0.0",
+		"node-fetch": "^2.6.1",
+		"query-string": "^6.13.2",
+		"shortid": "^2.2.15"
+	}
+}
